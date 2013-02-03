@@ -56,7 +56,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="C-Extensions.html#C-Extensions">C Exten
 
 <h3 class="section">6.58 Unnamed struct/union fields within structs/unions</h3>
 
-<p><a name="index-g_t_0040code_007bstruct_007d-3385"></a><a name="index-g_t_0040code_007bunion_007d-3386"></a>
+<p><a name="index-g_t_0040code_007bstruct_007d-3386"></a><a name="index-g_t_0040code_007bunion_007d-3387"></a>
 As permitted by ISO C11 and for compatibility with other compilers,
 GCC allows you to define
 a structure or union that contains, as fields, structures and unions
@@ -89,7 +89,7 @@ For example, this structure:
  <p>It is ambiguous which <code>a</code> is being referred to with &lsquo;<samp><span class="samp">foo.a</span></samp>&rsquo;. 
 The compiler gives errors for such constructs.
 
- <p><a name="index-fms_002dextensions-3387"></a>Unless <samp><span class="option">-fms-extensions</span></samp> is used, the unnamed field must be a
+ <p><a name="index-fms_002dextensions-3388"></a>Unless <samp><span class="option">-fms-extensions</span></samp> is used, the unnamed field must be a
 structure or union definition without a tag (for example, &lsquo;<samp><span class="samp">struct
 { int a; };</span></samp>&rsquo;).  If <samp><span class="option">-fms-extensions</span></samp> is used, the field may
 also be a definition with a tag such as &lsquo;<samp><span class="samp">struct foo { int a;
@@ -97,7 +97,7 @@ also be a definition with a tag such as &lsquo;<samp><span class="samp">struct f
 &lsquo;<samp><span class="samp">struct foo;</span></samp>&rsquo;, or a reference to a <code>typedef</code> name for a
 previously defined structure or union type.
 
- <p><a name="index-fplan9_002dextensions-3388"></a>The option <samp><span class="option">-fplan9-extensions</span></samp> enables
+ <p><a name="index-fplan9_002dextensions-3389"></a>The option <samp><span class="option">-fplan9-extensions</span></samp> enables
 <samp><span class="option">-fms-extensions</span></samp> as well as two other extensions.  First, a
 pointer to a structure is automatically converted to a pointer to an
 anonymous field for assignments and function calls.  For example:

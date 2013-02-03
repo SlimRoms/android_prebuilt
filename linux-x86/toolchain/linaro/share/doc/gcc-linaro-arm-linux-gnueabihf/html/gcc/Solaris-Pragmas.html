@@ -61,19 +61,19 @@ Up:&nbsp;<a rel="up" accesskey="u" href="Pragmas.html#Pragmas">Pragmas</a>
 <code>#pragma</code> directives for compatibility with the system compiler.
 
      <dl>
-<dt><code>align </code><var>alignment</var><code> (</code><var>variable</var><code> [, </code><var>variable</var><code>]...)</code><dd><a name="index-pragma_002c-align-3369"></a>
+<dt><code>align </code><var>alignment</var><code> (</code><var>variable</var><code> [, </code><var>variable</var><code>]...)</code><dd><a name="index-pragma_002c-align-3370"></a>
 Increase the minimum alignment of each <var>variable</var> to <var>alignment</var>. 
 This is the same as GCC's <code>aligned</code> attribute see <a href="Variable-Attributes.html#Variable-Attributes">Variable Attributes</a>).  Macro expansion occurs on the arguments to this pragma
 when compiling C and Objective-C.  It does not currently occur when
 compiling C++, but this is a bug which may be fixed in a future
 release.
 
-     <br><dt><code>fini (</code><var>function</var><code> [, </code><var>function</var><code>]...)</code><dd><a name="index-pragma_002c-fini-3370"></a>
+     <br><dt><code>fini (</code><var>function</var><code> [, </code><var>function</var><code>]...)</code><dd><a name="index-pragma_002c-fini-3371"></a>
 This pragma causes each listed <var>function</var> to be called after
 main, or during shared module unloading, by adding a call to the
 <code>.fini</code> section.
 
-     <br><dt><code>init (</code><var>function</var><code> [, </code><var>function</var><code>]...)</code><dd><a name="index-pragma_002c-init-3371"></a>
+     <br><dt><code>init (</code><var>function</var><code> [, </code><var>function</var><code>]...)</code><dd><a name="index-pragma_002c-init-3372"></a>
 This pragma causes each listed <var>function</var> to be called during
 initialization (before <code>main</code>) or during shared module loading, by
 adding a call to the <code>.init</code> section.

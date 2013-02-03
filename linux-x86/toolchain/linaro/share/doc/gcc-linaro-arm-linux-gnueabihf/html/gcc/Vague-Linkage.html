@@ -56,7 +56,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="C_002b_002b-Extensions.html#C_002b_002b
 
 <h3 class="section">7.3 Vague Linkage</h3>
 
-<p><a name="index-vague-linkage-3402"></a>
+<p><a name="index-vague-linkage-3403"></a>
 There are several constructs in C++ which require space in the object
 file but are not clearly tied to a single translation unit.  We say that
 these constructs have &ldquo;vague linkage&rdquo;.  Typically such constructs are
@@ -76,7 +76,7 @@ it will always require a copy.
 are also considered to have vague linkage, since they must be shared
 between all inlined and out-of-line instances of the function.
 
-     <br><dt>VTables<dd><a name="index-vtable-3403"></a>C++ virtual functions are implemented in most compilers using a lookup
+     <br><dt>VTables<dd><a name="index-vtable-3404"></a>C++ virtual functions are implemented in most compilers using a lookup
 table, known as a vtable.  The vtable contains pointers to the virtual
 functions provided by a class, and each object of the class contains a
 pointer to its vtable (or vtables, in some multiple-inheritance
@@ -90,7 +90,7 @@ vtable will still be emitted in every translation unit which defines it.
 Make sure that any inline virtuals are declared inline in the class
 body, even if they are not defined there.
 
-     <br><dt><code>type_info</code> objects<dd><a name="index-g_t_0040code_007btype_005finfo_007d-3404"></a><a name="index-RTTI-3405"></a>C++ requires information about types to be written out in order to
+     <br><dt><code>type_info</code> objects<dd><a name="index-g_t_0040code_007btype_005finfo_007d-3405"></a><a name="index-RTTI-3406"></a>C++ requires information about types to be written out in order to
 implement &lsquo;<samp><span class="samp">dynamic_cast</span></samp>&rsquo;, &lsquo;<samp><span class="samp">typeid</span></samp>&rsquo; and exception handling. 
 For polymorphic classes (classes with virtual functions), the &lsquo;<samp><span class="samp">type_info</span></samp>&rsquo;
 object is written out along with the vtable so that &lsquo;<samp><span class="samp">dynamic_cast</span></samp>&rsquo;

@@ -1094,6 +1094,22 @@ temporaries to other variables at copy locations, usually resulting in
 variable names which more closely resemble the original variables.  This flag
 is enabled by default at <samp><span class="option">-O</span></samp> and higher.
 
+     <br><dt><code>-ftree-coalesce-inlined-vars</code><dd>Tell the copyrename pass (see <samp><span class="option">-ftree-copyrename</span></samp>) to attempt to
+combine small user-defined variables too, but only if they were inlined
+from other functions.  It is a more limited form of
+<samp><span class="option">-ftree-coalesce-vars</span></samp>.  This may harm debug information of such
+inlined variables, but it will keep variables of the inlined-into
+function apart from each other, such that they are more likely to
+contain the expected values in a debugging session.  This was the
+default in GCC versions older than 4.7.
+
+     <br><dt><code>-ftree-coalesce-vars</code><dd>Tell the copyrename pass (see <samp><span class="option">-ftree-copyrename</span></samp>) to attempt to
+combine small user-defined variables too, instead of just compiler
+temporaries.  This may severely limit the ability to debug an optimized
+program compiled with <samp><span class="option">-fno-var-tracking-assignments</span></samp>.  In the
+negated form, this flag prevents SSA coalescing of user variables,
+including inlined ones.  This option is enabled by default.
+
      <br><dt><code>-ftree-ter</code><dd><a name="index-ftree_002dter-831"></a>Perform temporary expression replacement during the SSA-&gt;normal phase.  Single
 use/single def temporaries are replaced at their use location with their
 defining expression.  This results in non-GIMPLE code, but gives the expanders

@@ -56,7 +56,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="C_002b_002b-Misunderstandings.html#C_00
 
 <h4 class="subsection">11.8.3 Temporaries May Vanish Before You Expect</h4>
 
-<p><a name="index-temporaries_002c-lifetime-of-3476"></a><a name="index-portions-of-temporary-objects_002c-pointers-to-3477"></a>It is dangerous to use pointers or references to <em>portions</em> of a
+<p><a name="index-temporaries_002c-lifetime-of-3477"></a><a name="index-portions-of-temporary-objects_002c-pointers-to-3478"></a>It is dangerous to use pointers or references to <em>portions</em> of a
 temporary object.  The compiler may very well delete the object before
 you expect it to, leaving a pointer to garbage.  The most common place
 where this problem crops up is in classes like string classes,

@@ -1,4 +1,4 @@
-Linaro Toolchain 2012.12
+Linaro Toolchain 2013.01
 ========================
 
 This package contains pre-built versions of Linaro GCC and Linaro GDB
@@ -19,7 +19,7 @@ easier.
 
 What's included
 ---------------
- * Linaro GCC 4.7 2012.12
+ * Linaro GCC 4.7 2013.01
  * Linaro GDB 7.5 2012.12
  * A statically linked gdbserver in arm-linux-gnueabihf/debug-root
  * A system root

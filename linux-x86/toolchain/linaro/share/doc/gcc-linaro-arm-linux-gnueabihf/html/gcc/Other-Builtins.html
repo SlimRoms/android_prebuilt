@@ -773,14 +773,20 @@ are <code>long double</code>.
 </p></blockquote></div>
 
 <div class="defun">
-&mdash; Built-in Function: int32_t <b>__builtin_bswap32</b> (<var>int32_t x</var>)<var><a name="index-g_t_005f_005fbuiltin_005fbswap32-3326"></a></var><br>
+&mdash; Built-in Function: int16_t <b>__builtin_bswap16</b> (<var>int16_t x</var>)<var><a name="index-g_t_005f_005fbuiltin_005fbswap16-3326"></a></var><br>
 <blockquote><p>Returns <var>x</var> with the order of the bytes reversed; for example,
-<code>0xaabbccdd</code> becomes <code>0xddccbbaa</code>.  Byte here always means
+<code>0xaabb</code> becomes <code>0xbbaa</code>.  Byte here always means
 exactly 8 bits. 
 </p></blockquote></div>
 
 <div class="defun">
-&mdash; Built-in Function: int64_t <b>__builtin_bswap64</b> (<var>int64_t x</var>)<var><a name="index-g_t_005f_005fbuiltin_005fbswap64-3327"></a></var><br>
+&mdash; Built-in Function: int32_t <b>__builtin_bswap32</b> (<var>int32_t x</var>)<var><a name="index-g_t_005f_005fbuiltin_005fbswap32-3327"></a></var><br>
+<blockquote><p>Similar to <code>__builtin_bswap16</code>, except the argument and return types
+are 32-bit. 
+</p></blockquote></div>
+
+<div class="defun">
+&mdash; Built-in Function: int64_t <b>__builtin_bswap64</b> (<var>int64_t x</var>)<var><a name="index-g_t_005f_005fbuiltin_005fbswap64-3328"></a></var><br>
 <blockquote><p>Similar to <code>__builtin_bswap32</code>, except the argument and return types
 are 64-bit. 
 </p></blockquote></div>

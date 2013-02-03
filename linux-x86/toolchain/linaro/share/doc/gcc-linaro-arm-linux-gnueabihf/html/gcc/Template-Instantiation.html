@@ -56,7 +56,7 @@ Up:&nbsp;<a rel="up" accesskey="u" href="C_002b_002b-Extensions.html#C_002b_002b
 
 <h3 class="section">7.5 Where's the Template?</h3>
 
-<p><a name="index-template-instantiation-3418"></a>
+<p><a name="index-template-instantiation-3419"></a>
 C++ templates are the first language feature to require more
 intelligence from the environment than one usually finds on a UNIX
 system.  Somehow the compiler and linker have to make sure that each
@@ -112,7 +112,7 @@ then combine duplicate instantiations.
 template instantiations:
 
      <ol type=1 start=1>
-<li><a name="index-frepo-3419"></a>Compile your template-using code with <samp><span class="option">-frepo</span></samp>.  The compiler will
+<li><a name="index-frepo-3420"></a>Compile your template-using code with <samp><span class="option">-frepo</span></samp>.  The compiler will
 generate files with the extension &lsquo;<samp><span class="samp">.rpo</span></samp>&rsquo; listing all of the
 template instantiations used in the corresponding object files which
 could be instantiated there; the link wrapper, &lsquo;<samp><span class="samp">collect2</span></samp>&rsquo;, will
@@ -135,7 +135,7 @@ conflicts if multiple libraries try to provide the same instantiations.
 For greater control, use explicit instantiation as described in the next
 option.
 
-     <li><a name="index-fno_002dimplicit_002dtemplates-3420"></a>Compile your code with <samp><span class="option">-fno-implicit-templates</span></samp> to disable the
+     <li><a name="index-fno_002dimplicit_002dtemplates-3421"></a>Compile your code with <samp><span class="option">-fno-implicit-templates</span></samp> to disable the
 implicit generation of template instances, and explicitly instantiate
 all the ones you use.  This approach requires more knowledge of exactly
 which instances you need than do the others, but it's less
