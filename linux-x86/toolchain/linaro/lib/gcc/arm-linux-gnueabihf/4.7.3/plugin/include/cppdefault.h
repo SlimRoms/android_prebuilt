@@ -1,6 +1,6 @@
 /* CPP Library.
    Copyright (C) 1986, 1987, 1989, 1992, 1993, 1994, 1995, 1996, 1997, 1998,
-   1999, 2000, 2003, 2004, 2006, 2007 Free Software Foundation, Inc.
+   1999, 2000, 2003, 2004, 2006, 2007, 2012 Free Software Foundation, Inc.
    Contributed by Per Bothner, 1994-95.
    Based on CCCP program by Paul Rubin, June 1986
    Adapted to ANSI C, Richard Stallman, Jan 1987
@@ -45,9 +45,9 @@ struct default_include
 				   cpp_SYSROOT.  */
   const char multilib;		/* FNAME should have appended
 				   - the multilib path specified with -imultilib
-				     when 1 is passed,
+				     when set to 1,
 				   - the multiarch path specified with
-				     -imultiarch, when 2 is passed.  */
+				     -imultiarch, when set to 2.  */
 };
 
 extern const struct default_include cpp_include_defaults[];

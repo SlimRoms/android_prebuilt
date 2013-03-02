@@ -47,10 +47,7 @@ if gdb.current_objfile () is not None:
     libdir = libdir[len (prefix):]
 
     # Compute the ".."s needed to get from libdir to the prefix.
-    backdirs = len (libdir.split (os.sep))
-    if not os.path.basename(os.path.dirname(__file__)).startswith('lib'):
-        backdirs += 1 # multiarch subdir
-    dotdots = ('..' + os.sep) * backdirs
+    dotdots = ('..' + os.sep) * len (libdir.split (os.sep))
 
     objfile = gdb.current_objfile ().filename
     dir_ = os.path.join (os.path.dirname (objfile), dotdots, pythondir)
