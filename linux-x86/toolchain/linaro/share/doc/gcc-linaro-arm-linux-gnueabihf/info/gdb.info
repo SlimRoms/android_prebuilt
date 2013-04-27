@@ -25,7 +25,7 @@ developing GNU and promoting software freedom."
 
    This is the Tenth Edition, of `Debugging with GDB: the GNU
 Source-Level Debugger' for GDB (crosstool-NG
-linaro-1.13.1-4.7-2013.03-20130313 - Linaro GCC 2013.03) Version
+linaro-1.13.1-4.7-2013.04-20130415 - Linaro GCC 2013.04) Version
 7.5-2012.12.
 
    Copyright (C) 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996,
@@ -52,7 +52,7 @@ Debugging with GDB
 This file describes GDB, the GNU symbolic debugger.
 
    This is the Tenth Edition, for GDB (crosstool-NG
-linaro-1.13.1-4.7-2013.03-20130313 - Linaro GCC 2013.03) Version
+linaro-1.13.1-4.7-2013.04-20130415 - Linaro GCC 2013.04) Version
 7.5-2012.12.
 
    Copyright (C) 1988-2012 Free Software Foundation, Inc.

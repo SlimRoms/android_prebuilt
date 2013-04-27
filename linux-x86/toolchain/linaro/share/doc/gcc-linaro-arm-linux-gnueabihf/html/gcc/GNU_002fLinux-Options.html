@@ -60,16 +60,16 @@ Up:&nbsp;<a rel="up" accesskey="u" href="Submodel-Options.html#Submodel-Options"
 <p>These &lsquo;<samp><span class="samp">-m</span></samp>&rsquo; options are defined for GNU/Linux targets:
 
      <dl>
-<dt><code>-mglibc</code><dd><a name="index-mglibc-1370"></a>Use the GNU C library.  This is the default except
+<dt><code>-mglibc</code><dd><a name="index-mglibc-1371"></a>Use the GNU C library.  This is the default except
 on &lsquo;<samp><span class="samp">*-*-linux-*uclibc*</span></samp>&rsquo; and &lsquo;<samp><span class="samp">*-*-linux-*android*</span></samp>&rsquo; targets.
 
-     <br><dt><code>-muclibc</code><dd><a name="index-muclibc-1371"></a>Use uClibc C library.  This is the default on
+     <br><dt><code>-muclibc</code><dd><a name="index-muclibc-1372"></a>Use uClibc C library.  This is the default on
 &lsquo;<samp><span class="samp">*-*-linux-*uclibc*</span></samp>&rsquo; targets.
 
-     <br><dt><code>-mbionic</code><dd><a name="index-mbionic-1372"></a>Use Bionic C library.  This is the default on
+     <br><dt><code>-mbionic</code><dd><a name="index-mbionic-1373"></a>Use Bionic C library.  This is the default on
 &lsquo;<samp><span class="samp">*-*-linux-*android*</span></samp>&rsquo; targets.
 
-     <br><dt><code>-mandroid</code><dd><a name="index-mandroid-1373"></a>Compile code compatible with Android platform.  This is the default on
+     <br><dt><code>-mandroid</code><dd><a name="index-mandroid-1374"></a>Compile code compatible with Android platform.  This is the default on
 &lsquo;<samp><span class="samp">*-*-linux-*android*</span></samp>&rsquo; targets.
 
      <p>When compiling, this option enables <samp><span class="option">-mbionic</span></samp>, <samp><span class="option">-fPIC</span></samp>,
@@ -78,11 +78,11 @@ this option makes the GCC driver pass Android-specific options to the linker.
 Finally, this option causes the preprocessor macro <code>__ANDROID__</code>
 to be defined.
 
-     <br><dt><code>-tno-android-cc</code><dd><a name="index-tno_002dandroid_002dcc-1374"></a>Disable compilation effects of <samp><span class="option">-mandroid</span></samp>, i.e., do not enable
+     <br><dt><code>-tno-android-cc</code><dd><a name="index-tno_002dandroid_002dcc-1375"></a>Disable compilation effects of <samp><span class="option">-mandroid</span></samp>, i.e., do not enable
 <samp><span class="option">-mbionic</span></samp>, <samp><span class="option">-fPIC</span></samp>, <samp><span class="option">-fno-exceptions</span></samp> and
 <samp><span class="option">-fno-rtti</span></samp> by default.
 
-     <br><dt><code>-tno-android-ld</code><dd><a name="index-tno_002dandroid_002dld-1375"></a>Disable linking effects of <samp><span class="option">-mandroid</span></samp>, i.e., pass standard Linux
+     <br><dt><code>-tno-android-ld</code><dd><a name="index-tno_002dandroid_002dld-1376"></a>Disable linking effects of <samp><span class="option">-mandroid</span></samp>, i.e., pass standard Linux
 linking options to the linker.
 
  </dl>

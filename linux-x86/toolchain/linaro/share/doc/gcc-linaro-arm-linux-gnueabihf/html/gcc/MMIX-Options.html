@@ -56,39 +56,39 @@ Up:&nbsp;<a rel="up" accesskey="u" href="Submodel-Options.html#Submodel-Options"
 
 <h4 class="subsection">3.17.29 MMIX Options</h4>
 
-<p><a name="index-MMIX-Options-1803"></a>
+<p><a name="index-MMIX-Options-1804"></a>
 These options are defined for the MMIX:
 
      <dl>
-<dt><code>-mlibfuncs</code><dt><code>-mno-libfuncs</code><dd><a name="index-mlibfuncs-1804"></a><a name="index-mno_002dlibfuncs-1805"></a>Specify that intrinsic library functions are being compiled, passing all
+<dt><code>-mlibfuncs</code><dt><code>-mno-libfuncs</code><dd><a name="index-mlibfuncs-1805"></a><a name="index-mno_002dlibfuncs-1806"></a>Specify that intrinsic library functions are being compiled, passing all
 values in registers, no matter the size.
 
-     <br><dt><code>-mepsilon</code><dt><code>-mno-epsilon</code><dd><a name="index-mepsilon-1806"></a><a name="index-mno_002depsilon-1807"></a>Generate floating-point comparison instructions that compare with respect
+     <br><dt><code>-mepsilon</code><dt><code>-mno-epsilon</code><dd><a name="index-mepsilon-1807"></a><a name="index-mno_002depsilon-1808"></a>Generate floating-point comparison instructions that compare with respect
 to the <code>rE</code> epsilon register.
 
-     <br><dt><code>-mabi=mmixware</code><dt><code>-mabi=gnu</code><dd><a name="index-mabi_003dmmixware-1808"></a><a name="index-mabi_003dgnu-1809"></a>Generate code that passes function parameters and return values that (in
+     <br><dt><code>-mabi=mmixware</code><dt><code>-mabi=gnu</code><dd><a name="index-mabi_003dmmixware-1809"></a><a name="index-mabi_003dgnu-1810"></a>Generate code that passes function parameters and return values that (in
 the called function) are seen as registers <code>$0</code> and up, as opposed to
 the GNU ABI which uses global registers <code>$231</code> and up.
 
-     <br><dt><code>-mzero-extend</code><dt><code>-mno-zero-extend</code><dd><a name="index-mzero_002dextend-1810"></a><a name="index-mno_002dzero_002dextend-1811"></a>When reading data from memory in sizes shorter than 64 bits, use (do not
+     <br><dt><code>-mzero-extend</code><dt><code>-mno-zero-extend</code><dd><a name="index-mzero_002dextend-1811"></a><a name="index-mno_002dzero_002dextend-1812"></a>When reading data from memory in sizes shorter than 64 bits, use (do not
 use) zero-extending load instructions by default, rather than
 sign-extending ones.
 
-     <br><dt><code>-mknuthdiv</code><dt><code>-mno-knuthdiv</code><dd><a name="index-mknuthdiv-1812"></a><a name="index-mno_002dknuthdiv-1813"></a>Make the result of a division yielding a remainder have the same sign as
+     <br><dt><code>-mknuthdiv</code><dt><code>-mno-knuthdiv</code><dd><a name="index-mknuthdiv-1813"></a><a name="index-mno_002dknuthdiv-1814"></a>Make the result of a division yielding a remainder have the same sign as
 the divisor.  With the default, <samp><span class="option">-mno-knuthdiv</span></samp>, the sign of the
 remainder follows the sign of the dividend.  Both methods are
 arithmetically valid, the latter being almost exclusively used.
 
-     <br><dt><code>-mtoplevel-symbols</code><dt><code>-mno-toplevel-symbols</code><dd><a name="index-mtoplevel_002dsymbols-1814"></a><a name="index-mno_002dtoplevel_002dsymbols-1815"></a>Prepend (do not prepend) a &lsquo;<samp><span class="samp">:</span></samp>&rsquo; to all global symbols, so the assembly
+     <br><dt><code>-mtoplevel-symbols</code><dt><code>-mno-toplevel-symbols</code><dd><a name="index-mtoplevel_002dsymbols-1815"></a><a name="index-mno_002dtoplevel_002dsymbols-1816"></a>Prepend (do not prepend) a &lsquo;<samp><span class="samp">:</span></samp>&rsquo; to all global symbols, so the assembly
 code can be used with the <code>PREFIX</code> assembly directive.
 
-     <br><dt><code>-melf</code><dd><a name="index-melf-1816"></a>Generate an executable in the ELF format, rather than the default
+     <br><dt><code>-melf</code><dd><a name="index-melf-1817"></a>Generate an executable in the ELF format, rather than the default
 &lsquo;<samp><span class="samp">mmo</span></samp>&rsquo; format used by the <samp><span class="command">mmix</span></samp> simulator.
 
-     <br><dt><code>-mbranch-predict</code><dt><code>-mno-branch-predict</code><dd><a name="index-mbranch_002dpredict-1817"></a><a name="index-mno_002dbranch_002dpredict-1818"></a>Use (do not use) the probable-branch instructions, when static branch
+     <br><dt><code>-mbranch-predict</code><dt><code>-mno-branch-predict</code><dd><a name="index-mbranch_002dpredict-1818"></a><a name="index-mno_002dbranch_002dpredict-1819"></a>Use (do not use) the probable-branch instructions, when static branch
 prediction indicates a probable branch.
 
-     <br><dt><code>-mbase-addresses</code><dt><code>-mno-base-addresses</code><dd><a name="index-mbase_002daddresses-1819"></a><a name="index-mno_002dbase_002daddresses-1820"></a>Generate (do not generate) code that uses <em>base addresses</em>.  Using a
+     <br><dt><code>-mbase-addresses</code><dt><code>-mno-base-addresses</code><dd><a name="index-mbase_002daddresses-1820"></a><a name="index-mno_002dbase_002daddresses-1821"></a>Generate (do not generate) code that uses <em>base addresses</em>.  Using a
 base address automatically generates a request (handled by the assembler
 and the linker) for a constant to be set up in a global register.  The
 register is used for one or more base address requests within the range 0
@@ -97,7 +97,7 @@ and fast code, but the number of different data items that can be
 addressed is limited.  This means that a program that uses lots of static
 data may require <samp><span class="option">-mno-base-addresses</span></samp>.
 
-     <br><dt><code>-msingle-exit</code><dt><code>-mno-single-exit</code><dd><a name="index-msingle_002dexit-1821"></a><a name="index-mno_002dsingle_002dexit-1822"></a>Force (do not force) generated code to have a single exit point in each
+     <br><dt><code>-msingle-exit</code><dt><code>-mno-single-exit</code><dd><a name="index-msingle_002dexit-1822"></a><a name="index-mno_002dsingle_002dexit-1823"></a>Force (do not force) generated code to have a single exit point in each
 function. 
 </dl>
 

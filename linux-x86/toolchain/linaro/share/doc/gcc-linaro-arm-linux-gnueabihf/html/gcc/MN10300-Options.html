@@ -56,57 +56,57 @@ Up:&nbsp;<a rel="up" accesskey="u" href="Submodel-Options.html#Submodel-Options"
 
 <h4 class="subsection">3.17.30 MN10300 Options</h4>
 
-<p><a name="index-MN10300-options-1823"></a>
+<p><a name="index-MN10300-options-1824"></a>
 These <samp><span class="option">-m</span></samp> options are defined for Matsushita MN10300 architectures:
 
      <dl>
-<dt><code>-mmult-bug</code><dd><a name="index-mmult_002dbug-1824"></a>Generate code to avoid bugs in the multiply instructions for the MN10300
+<dt><code>-mmult-bug</code><dd><a name="index-mmult_002dbug-1825"></a>Generate code to avoid bugs in the multiply instructions for the MN10300
 processors.  This is the default.
 
-     <br><dt><code>-mno-mult-bug</code><dd><a name="index-mno_002dmult_002dbug-1825"></a>Do not generate code to avoid bugs in the multiply instructions for the
+     <br><dt><code>-mno-mult-bug</code><dd><a name="index-mno_002dmult_002dbug-1826"></a>Do not generate code to avoid bugs in the multiply instructions for the
 MN10300 processors.
 
-     <br><dt><code>-mam33</code><dd><a name="index-mam33-1826"></a>Generate code using features specific to the AM33 processor.
+     <br><dt><code>-mam33</code><dd><a name="index-mam33-1827"></a>Generate code using features specific to the AM33 processor.
 
-     <br><dt><code>-mno-am33</code><dd><a name="index-mno_002dam33-1827"></a>Do not generate code using features specific to the AM33 processor.  This
+     <br><dt><code>-mno-am33</code><dd><a name="index-mno_002dam33-1828"></a>Do not generate code using features specific to the AM33 processor.  This
 is the default.
 
-     <br><dt><code>-mam33-2</code><dd><a name="index-mam33_002d2-1828"></a>Generate code using features specific to the AM33/2.0 processor.
+     <br><dt><code>-mam33-2</code><dd><a name="index-mam33_002d2-1829"></a>Generate code using features specific to the AM33/2.0 processor.
 
-     <br><dt><code>-mam34</code><dd><a name="index-mam34-1829"></a>Generate code using features specific to the AM34 processor.
+     <br><dt><code>-mam34</code><dd><a name="index-mam34-1830"></a>Generate code using features specific to the AM34 processor.
 
-     <br><dt><code>-mtune=</code><var>cpu-type</var><dd><a name="index-mtune-1830"></a>Use the timing characteristics of the indicated CPU type when
+     <br><dt><code>-mtune=</code><var>cpu-type</var><dd><a name="index-mtune-1831"></a>Use the timing characteristics of the indicated CPU type when
 scheduling instructions.  This does not change the targeted processor
 type.  The CPU type must be one of &lsquo;<samp><span class="samp">mn10300</span></samp>&rsquo;, &lsquo;<samp><span class="samp">am33</span></samp>&rsquo;,
 &lsquo;<samp><span class="samp">am33-2</span></samp>&rsquo; or &lsquo;<samp><span class="samp">am34</span></samp>&rsquo;.
 
-     <br><dt><code>-mreturn-pointer-on-d0</code><dd><a name="index-mreturn_002dpointer_002don_002dd0-1831"></a>When generating a function that returns a pointer, return the pointer
+     <br><dt><code>-mreturn-pointer-on-d0</code><dd><a name="index-mreturn_002dpointer_002don_002dd0-1832"></a>When generating a function that returns a pointer, return the pointer
 in both <code>a0</code> and <code>d0</code>.  Otherwise, the pointer is returned
 only in a0, and attempts to call such functions without a prototype
 would result in errors.  Note that this option is on by default; use
 <samp><span class="option">-mno-return-pointer-on-d0</span></samp> to disable it.
 
-     <br><dt><code>-mno-crt0</code><dd><a name="index-mno_002dcrt0-1832"></a>Do not link in the C run-time initialization object file.
+     <br><dt><code>-mno-crt0</code><dd><a name="index-mno_002dcrt0-1833"></a>Do not link in the C run-time initialization object file.
 
-     <br><dt><code>-mrelax</code><dd><a name="index-mrelax-1833"></a>Indicate to the linker that it should perform a relaxation optimization pass
+     <br><dt><code>-mrelax</code><dd><a name="index-mrelax-1834"></a>Indicate to the linker that it should perform a relaxation optimization pass
 to shorten branches, calls and absolute memory addresses.  This option only
 has an effect when used on the command line for the final link step.
 
      <p>This option makes symbolic debugging impossible.
 
-     <br><dt><code>-mliw</code><dd><a name="index-mliw-1834"></a>Allow the compiler to generate <em>Long Instruction Word</em>
+     <br><dt><code>-mliw</code><dd><a name="index-mliw-1835"></a>Allow the compiler to generate <em>Long Instruction Word</em>
 instructions if the target is the &lsquo;<samp><span class="samp">AM33</span></samp>&rsquo; or later.  This is the
 default.  This option defines the preprocessor macro &lsquo;<samp><span class="samp">__LIW__</span></samp>&rsquo;.
 
-     <br><dt><code>-mnoliw</code><dd><a name="index-mnoliw-1835"></a>Do not allow the compiler to generate <em>Long Instruction Word</em>
+     <br><dt><code>-mnoliw</code><dd><a name="index-mnoliw-1836"></a>Do not allow the compiler to generate <em>Long Instruction Word</em>
 instructions.  This option defines the preprocessor macro
 &lsquo;<samp><span class="samp">__NO_LIW__</span></samp>&rsquo;.
 
-     <br><dt><code>-msetlb</code><dd><a name="index-msetlb-1836"></a>Allow the compiler to generate the <em>SETLB</em> and <em>Lcc</em>
+     <br><dt><code>-msetlb</code><dd><a name="index-msetlb-1837"></a>Allow the compiler to generate the <em>SETLB</em> and <em>Lcc</em>
 instructions if the target is the &lsquo;<samp><span class="samp">AM33</span></samp>&rsquo; or later.  This is the
 default.  This option defines the preprocessor macro &lsquo;<samp><span class="samp">__SETLB__</span></samp>&rsquo;.
 
-     <br><dt><code>-mnosetlb</code><dd><a name="index-mnosetlb-1837"></a>Do not allow the compiler to generate <em>SETLB</em> or <em>Lcc</em>
+     <br><dt><code>-mnosetlb</code><dd><a name="index-mnosetlb-1838"></a>Do not allow the compiler to generate <em>SETLB</em> or <em>Lcc</em>
 instructions.  This option defines the preprocessor macro
 &lsquo;<samp><span class="samp">__NO_SETLB__</span></samp>&rsquo;.
 

@@ -56,9 +56,9 @@ Up:&nbsp;<a rel="up" accesskey="u" href="Submodel-Options.html#Submodel-Options"
 
 <h4 class="subsection">3.17.4 AVR Options</h4>
 
-<p><a name="index-AVR-Options-1120"></a>
+<p><a name="index-AVR-Options-1121"></a>
      <dl>
-<dt><code>-mmcu=</code><var>mcu</var><dd><a name="index-mmcu-1121"></a>Specify Atmel AVR instruction set architectures (ISA) or MCU type.
+<dt><code>-mmcu=</code><var>mcu</var><dd><a name="index-mmcu-1122"></a>Specify Atmel AVR instruction set architectures (ISA) or MCU type.
 
      <p>The default for this option is&nbsp;<code>avr2</code>.
 
@@ -169,7 +169,7 @@ assembler only.
 
      </dl>
 
-     <br><dt><code>-maccumulate-args</code><dd><a name="index-maccumulate_002dargs-1122"></a>Accumulate outgoing function arguments and acquire/release the needed
+     <br><dt><code>-maccumulate-args</code><dd><a name="index-maccumulate_002dargs-1123"></a>Accumulate outgoing function arguments and acquire/release the needed
 stack space for outgoing function arguments once in function
 prologue/epilogue.  Without this option, outgoing arguments are pushed
 before calling a function and popped afterwards.
@@ -183,23 +183,23 @@ stack after such a function call.
 several calls to functions that get their arguments on the stack like
 calls to printf-like functions.
 
-     <br><dt><code>-mbranch-cost=</code><var>cost</var><dd><a name="index-mbranch_002dcost-1123"></a>Set the branch costs for conditional branch instructions to
+     <br><dt><code>-mbranch-cost=</code><var>cost</var><dd><a name="index-mbranch_002dcost-1124"></a>Set the branch costs for conditional branch instructions to
 <var>cost</var>.  Reasonable values for <var>cost</var> are small, non-negative
 integers. The default branch cost is 0.
 
-     <br><dt><code>-mcall-prologues</code><dd><a name="index-mcall_002dprologues-1124"></a>Functions prologues/epilogues are expanded as calls to appropriate
+     <br><dt><code>-mcall-prologues</code><dd><a name="index-mcall_002dprologues-1125"></a>Functions prologues/epilogues are expanded as calls to appropriate
 subroutines.  Code size is smaller.
 
-     <br><dt><code>-mint8</code><dd><a name="index-mint8-1125"></a>Assume <code>int</code> to be 8-bit integer.  This affects the sizes of all types: a
+     <br><dt><code>-mint8</code><dd><a name="index-mint8-1126"></a>Assume <code>int</code> to be 8-bit integer.  This affects the sizes of all types: a
 <code>char</code> is 1 byte, an <code>int</code> is 1 byte, a <code>long</code> is 2 bytes,
 and <code>long long</code> is 4 bytes.  Please note that this option does not
 conform to the C standards, but it results in smaller code
 size.
 
-     <br><dt><code>-mno-interrupts</code><dd><a name="index-mno_002dinterrupts-1126"></a>Generated code is not compatible with hardware interrupts. 
+     <br><dt><code>-mno-interrupts</code><dd><a name="index-mno_002dinterrupts-1127"></a>Generated code is not compatible with hardware interrupts. 
 Code size is smaller.
 
-     <br><dt><code>-mrelax</code><dd><a name="index-mrelax-1127"></a>Try to replace <code>CALL</code> resp. <code>JMP</code> instruction by the shorter
+     <br><dt><code>-mrelax</code><dd><a name="index-mrelax-1128"></a>Try to replace <code>CALL</code> resp. <code>JMP</code> instruction by the shorter
 <code>RCALL</code> resp. <code>RJMP</code> instruction if applicable. 
 Setting <code>-mrelax</code> just adds the <code>--relax</code> option to the
 linker command line when the linker is called.
@@ -212,14 +212,14 @@ differ from instructions in the assembler code.
      <p>Relaxing must be turned on if linker stubs are needed, see the
 section on <code>EIND</code> and linker stubs below.
 
-     <br><dt><code>-mshort-calls</code><dd><a name="index-mshort_002dcalls-1128"></a>This option has been deprecated and will be removed in GCC 4.8. 
+     <br><dt><code>-mshort-calls</code><dd><a name="index-mshort_002dcalls-1129"></a>This option has been deprecated and will be removed in GCC 4.8. 
 See <code>-mrelax</code> for a replacement.
 
      <p>Use <code>RCALL</code>/<code>RJMP</code> instructions even on devices with
 16&nbsp;KiB or more of program memory, i.e. on devices that
 have the <code>CALL</code> and <code>JMP</code> instructions.
 
-     <br><dt><code>-msp8</code><dd><a name="index-msp8-1129"></a>Treat the stack pointer register as an 8-bit register,
+     <br><dt><code>-msp8</code><dd><a name="index-msp8-1130"></a>Treat the stack pointer register as an 8-bit register,
 i.e. assume the high byte of the stack pointer is zero. 
 In general, you don't need to set this option by hand.
 
@@ -232,7 +232,7 @@ proper's command line, because the compiler then knows if the device
 or architecture has an 8-bit stack pointer and thus no <code>SPH</code>
 register or not.
 
-     <br><dt><code>-mstrict-X</code><dd><a name="index-mstrict_002dX-1130"></a>Use address register <code>X</code> in a way proposed by the hardware.  This means
+     <br><dt><code>-mstrict-X</code><dd><a name="index-mstrict_002dX-1131"></a>Use address register <code>X</code> in a way proposed by the hardware.  This means
 that <code>X</code> is only used in indirect, post-increment or
 pre-decrement addressing.
 
@@ -247,12 +247,12 @@ performed as
           ld   <var>Rn</var>, X        ; <var>Rn</var> = *X
           sbiw r26, const   ; X -= const
 </pre>
-     <br><dt><code>-mtiny-stack</code><dd><a name="index-mtiny_002dstack-1131"></a>Only change the lower 8&nbsp;bits of the stack pointer. 
+     <br><dt><code>-mtiny-stack</code><dd><a name="index-mtiny_002dstack-1132"></a>Only change the lower 8&nbsp;bits of the stack pointer. 
 </dl>
 
 <h5 class="subsubsection">3.17.4.1 <code>EIND</code> and Devices with more than 128 Ki Bytes of Flash</h5>
 
-<p><a name="index-g_t_0040code_007bEIND_007d-1132"></a>Pointers in the implementation are 16&nbsp;bits wide. 
+<p><a name="index-g_t_0040code_007bEIND_007d-1133"></a>Pointers in the implementation are 16&nbsp;bits wide. 
 The address of a function or label is represented as word address so
 that indirect jumps and calls can target any code address in the
 range of 64&nbsp;Ki words.
@@ -367,7 +367,7 @@ Alternatively, <code>func_4</code> can be defined in the linker script.
 
 <h5 class="subsubsection">3.17.4.2 Handling of the <code>RAMPD</code>, <code>RAMPX</code>, <code>RAMPY</code> and <code>RAMPZ</code> Special Function Registers</h5>
 
-<p><a name="index-g_t_0040code_007bRAMPD_007d-1133"></a><a name="index-g_t_0040code_007bRAMPX_007d-1134"></a><a name="index-g_t_0040code_007bRAMPY_007d-1135"></a><a name="index-g_t_0040code_007bRAMPZ_007d-1136"></a>Some AVR devices support memories larger than the 64&nbsp;KiB range
+<p><a name="index-g_t_0040code_007bRAMPD_007d-1134"></a><a name="index-g_t_0040code_007bRAMPX_007d-1135"></a><a name="index-g_t_0040code_007bRAMPY_007d-1136"></a><a name="index-g_t_0040code_007bRAMPZ_007d-1137"></a>Some AVR devices support memories larger than the 64&nbsp;KiB range
 that can be accessed with 16-bit pointers.  To access memory locations
 outside this 64&nbsp;KiB range, the contentent of a <code>RAMP</code>
 register is used as high part of the address:
